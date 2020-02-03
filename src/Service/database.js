@@ -26,7 +26,7 @@ function simpleExecute(statement, binds = [], opts = {}) {
     return new Promise(async (resolve, reject) => {
       let conn;
    
-      //opts.outFormat = oracledb.OBJECT;
+      opts.outFormat = oracledb.OBJECT;
       opts.autoCommit = true;
    
       try {

@@ -49,7 +49,7 @@ module.exports.post = post;
  
 function insertUser(user, cb) {
     oracledb.getConnection(
-        config.database,
+        config.hrPool,
         function(err, connection){
             if (err) {
                 return cb(err);

@@ -11,21 +11,17 @@ process.env.UV_THREADPOOL_SIZE = dbConfig.hrPool.poolMax + defaultThreadPoolSize
 async function startup() {
 
     try {
-        console.log('Inicializando conexão com banco');
-
-        await connDatabase.initialize();
+         await connDatabase.initialize();
+         console.log('Inicializando conexão com banco');
     } catch (err) {
         console.error(err);
-
-
         process.exit(1); // Non-zero failure code
     }
     console.log('Iniciando Aplicação');
 
     try {
-        console.log('Inicializando model Webserver');
-
-        await webServer.initialize();
+               await webServer.initialize();
+               console.log('Inicializando model Webserver');
     } catch (err) {
         console.error(err);
 
