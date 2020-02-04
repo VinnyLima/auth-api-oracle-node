@@ -56,7 +56,7 @@ function insertUser(user, cb) {
             }
  
             connection.execute(
-                `insert into hr.jsao_users ( 
+                `insert into jsao_users ( 
                    email, 
                    password, 
                    role 
@@ -104,6 +104,8 @@ function insertUser(user, cb) {
  
                         return cb(err);
                     }
+
+                    console.log(results.outBinds);
  
                     cb(null, {
                         id: results.outBinds.rid[0],

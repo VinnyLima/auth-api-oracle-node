@@ -19,7 +19,7 @@ function post(req, res, next) {
                     '   email as "email", ' +
                     '   password as "password", ' +
                     '   role as "role" ' +
-                    'from hr.jsao_users ' +
+                    'from jsao_users ' +
                     'where email = :email',
                     {
                         email: req.body.email
@@ -44,7 +44,7 @@ function post(req, res, next) {
                         
      
                         bcrypt.compare(req.body.password, user.password, function(err, pwMatch) {
-                            var payload;
+                            var payload; 
 
      
                             if (err) {
