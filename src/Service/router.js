@@ -3,7 +3,7 @@ const router = new express.Router();
 
 var publicThings = require('../Controllers/publicThings');
 var protectedThings = require('../Controllers/protectedThings.js');
-var users = require('../Controllers/users.js');
+var users = require('../Controllers/Users.js');
 var logins = require('../Controllers/logins.js');
 var UserUpdate = require('../Controllers/UsersAdd');
 
