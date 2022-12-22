@@ -19,7 +19,7 @@
     "cors": "^2.8.5",
     "express": "^4.12.4",
     "http": "0.0.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "morgan": "^1.5.3",
     "nodemon": "^2.0.2",
     "oracledb": "^4.1.0"
